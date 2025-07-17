@@ -2,6 +2,7 @@ package aziz.springframework.spring6webapp.domain;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class Author {
     private String lastName;
 
     @ManyToMany(mappedBy = "authors")
-    Set<Book> books;
+    Set<Book> books = new HashSet<>();
 
     public Long getId() {
         return id;
