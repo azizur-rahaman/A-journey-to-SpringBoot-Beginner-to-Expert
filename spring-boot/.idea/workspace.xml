@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f5256cc-2aae-4c87-82c4-60816ee3aa21" name="Changes" comment="" />
+    <list default="true" id="db491949-2fcd-4ea7-ab08-2e6c75e2200d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,19 +20,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2zuXPPTpPT7EqKdQEq5nu3pzmwp" />
+  <component name="ProjectId" id="2zuo9KTdegI9a7sGOJ5srydAJzy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -41,10 +36,16 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;660&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;659&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Spring6WebappApplication.executor&quot;: &quot;Debug&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;JPA-Entitles-and-JPA-Relationship&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/azizurrahaman/Documents/GitHub/A-journey-to-SpringBoot-Beginner-to-Expert/spring-book/[1]spring-6-webapp&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Section-3-Performing-Dependency-Injection-with-Spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/azizurrahaman/Documents/GitHub/A-journey-to-SpringBoot-Beginner-to-Expert/spring-boot&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,12 +73,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f5256cc-2aae-4c87-82c4-60816ee3aa21" name="Changes" comment="" />
-      <created>1752581906694</created>
+      <changelist id="db491949-2fcd-4ea7-ab08-2e6c75e2200d" name="Changes" comment="" />
+      <created>1752590165942</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1752581906694</updated>
-      <workItem from="1752581907933" duration="3600000" />
+      <updated>1752590165942</updated>
+      <workItem from="1752590167036" duration="5718000" />
+      <workItem from="1752641512889" duration="3525000" />
+      <workItem from="1752732728106" duration="3095000" />
+      <workItem from="1752842284431" duration="45000" />
     </task>
     <servers />
   </component>
