@@ -32,6 +32,14 @@ public class Author {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
+    
+
+    @Override
+    public String toString() {
+        return "Author [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", books=" + books + "]";
+    }
     @Override
     public int hashCode() {
         final int prime = 31;

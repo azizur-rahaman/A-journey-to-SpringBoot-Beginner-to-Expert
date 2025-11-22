@@ -33,6 +33,13 @@ public class Book {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
+    
+
+    @Override
+    public String toString() {
+        return "Book [id=" + id + ", title=" + title + ", isbn=" + isbn + ", authors=" + authors + "]";
+    }
     @Override
     public int hashCode() {
         final int prime = 31;
