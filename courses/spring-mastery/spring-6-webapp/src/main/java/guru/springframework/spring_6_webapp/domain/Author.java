@@ -1,5 +1,7 @@
 package main.java.guru.springframework.spring_6_webapp.domain;
 
+import java.util.Set;
+
 @Entity
 public class Author {
 
@@ -8,6 +10,10 @@ public class Author {
     private Long id;
     private String firstName;
     private String lastName;
+
+    @ManyToMany(mappedBy="books")
+    private Set<Book> books;
+
     public Long getId() {
         return id;
     }
