@@ -1,5 +1,6 @@
 package main.java.guru.springframework.spring_6_webapp.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -13,7 +14,7 @@ public class Book {
 
     @ManyToMany(mappedBy="authors")
     @JoinTable(name="author_books", joinColums=@joinColums(name="book_id"), inverseJoinColumn=@JoinColumn(name="author_id"))
-    private Set<Author> authors;
+    private Set<Author> authors = new HashSet<>();
 
     public Long getId() {
         return id;

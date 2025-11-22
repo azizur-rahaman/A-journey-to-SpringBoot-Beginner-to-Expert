@@ -1,5 +1,6 @@
 package main.java.guru.springframework.spring_6_webapp.domain;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -12,7 +13,7 @@ public class Author {
     private String lastName;
 
     @ManyToMany(mappedBy="books")
-    private Set<Book> books;
+    private Set<Book> books = new HashSet<>();
 
     public Long getId() {
         return id;
