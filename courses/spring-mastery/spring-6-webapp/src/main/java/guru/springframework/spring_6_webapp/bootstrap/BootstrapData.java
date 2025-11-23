@@ -1,18 +1,23 @@
 package main.java.guru.springframework.spring_6_webapp.bootstrap;
 
+import java.util.concurrent.Flow.Publisher;
+
 import main.java.guru.springframework.spring_6_webapp.domain.Author;
 import main.java.guru.springframework.spring_6_webapp.domain.Book;
 import main.java.guru.springframework.spring_6_webapp.repositories.AuthorRepository;
 import main.java.guru.springframework.spring_6_webapp.repositories.BookRepository;
+import main.java.guru.springframework.spring_6_webapp.repositories.PublisherRepository;
 
 @Component
 public class BootstrapData implements CommandLineRunner{
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
+    private final PublisherRepository publisherRepository;
 
-    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository){
+    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository){
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
+        this.publisherRepository = publisherRepository;
     }
 
     @Override
@@ -42,6 +47,21 @@ public class BootstrapData implements CommandLineRunner{
         // Association
         ericSaved.getBooks().add(ddd);
         redSaved.getBooks().add(noEJBSaved);
+
+
+        Publisher publisher = new Publisher();
+        publisher.setPublisherName("My Publisher");
+        publisher.setAddress("123 Main");
+        Publisher savedPublisher = publisherRepository.saved(publisher);
+
+        dddSaved.setPublisher(savedPublisher);
+        noEJBSaved.setPublisher(savedPublisher);
+
+        //persistant
+        authorRepository.save(ericSaved);
+        authorRepository.save(redSaved);
+        bookRepository.save(dddSaved);
+        bookRepository.save(noEJBSaved);
 
         System.out.println("In Bootsrap");
         System.out.println("Author Count"+ authorRepository.count());
